@@ -1,0 +1,20 @@
+SỔ THU CHI CÁ NHÂN — BẢN CÀI ANDROID DẠNG PWA
+
+ĐÂY CHƯA PHẢI FILE APK. Đây là website có thể được cài lên màn hình chính điện thoại Android khi được đưa lên HTTPS.
+
+CÀI ĐẶT MIỄN PHÍ QUA GITHUB PAGES
+1. Tạo tài khoản GitHub nếu chưa có.
+2. Tạo repository mới, ví dụ so-thu-chi-ca-nhan. Nên chọn Private nếu chỉ thử nghiệm; nếu GitHub Pages không hỗ trợ repo riêng theo gói đang dùng, cân nhắc repository Public, hiểu rằng MÃ NGUỒN sẽ công khai (KHÔNG đưa dữ liệu giao dịch/sao lưu lên repo).
+3. Tải lên 5 file trong thư mục này vào thư mục gốc của repository: index.html, manifest.webmanifest, service-worker.js, icon-192.png, icon-512.png.
+4. Vào Settings > Pages > Build and deployment > Deploy from a branch > main > /(root) > Save.
+5. Khi Pages đã phát hành, mở URL HTTPS được cung cấp trên Chrome Android.
+6. Menu ba chấm > Install app / Cài đặt ứng dụng (hoặc Thêm vào màn hình chính).
+7. Mở icon Sổ Thu Chi và nhập khoản thu chi. Sau khi mở trực tuyến thành công một lần, app có thể dùng offline.
+
+LƯU Ý QUAN TRỌNG
+- Dữ liệu được lưu LOCAL trên chính thiết bị/trình duyệt, KHÔNG được đồng bộ với thiết bị khác.
+- Khi chuyển từ HTML V2 cũ sang địa chỉ PWA mới, dữ liệu KHÔNG tự chuyển. Hãy xuất JSON ở bản V2 trước rồi nhập JSON vào app mới.
+- Định kỳ bấm Tải bản sao lưu (JSON) và giữ file ở nơi an toàn riêng của bạn.
+- Nếu xóa dữ liệu trình duyệt, gỡ ứng dụng hoặc thay điện thoại, dữ liệu có thể bị mất nếu chưa sao lưu.
+- Không tải file JSON chứa giao dịch cá nhân lên GitHub repository.
+- Các công cụ GitHub/Pages có thể thay đổi giao diện hoặc điều kiện miễn phí theo thời gian.
